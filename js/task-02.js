@@ -7,7 +7,7 @@ const ingredients = [
   'Приправы',
 ];
 const list = document.querySelector("#ingredients");
-ingredients.forEach(function (ingredient) {
+ingredients.map(function (ingredient) {
   const ingridientsListItem = document.createElement("li");
   ingridientsListItem.textContent = ingredient;
   list.appendChild(ingridientsListItem);
